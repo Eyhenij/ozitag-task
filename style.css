@@ -1,53 +1,52 @@
-*{
+/*Обнуление*/
+*,*:before,*:after{
   padding: 0;
-  font-family: arial, sans-serif;
-  color: #000000;
-}
-
-body {
   margin: 0;
-  text-align: center;
-  background-repeat: no-repeat;
-  background-position-y: top;
-  background-position-x: calc(50vw + 16px);
-  background-image: url("img/hero-bg2.jpg");  
+  border: 0;
+  box-sizing: border-box;
 }
-
-.page {
-  display: flex;
-  flex-direction: column;
-  min-width: auto;
-  min-height: 100vh;
-  font-size: 14px;
-  line-height: 18px;
-  color: #333333;
-  background-color:#ffffff;
+html,body{
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
-
-.page-header {
-  font-size: 48px;
-  font-weight: bold;
-  background-color: burlywood; 
- }
-
-.page-title {
-  margin: 0;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 48px;
+/*Стили*/
+.wrapper{
 }
-
-a {
-  color: #6a6872;
-  text-decoration: inline;
-  text-transform: uppercase;
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 50;
 }
+.header:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #5e5373;
+}
+.container {
+}
+.header__body {
+  position: relative;
+  z-index: 2;
 
-footer {
-  color: #000000;
-  background-color: cadetblue;
-  margin-top: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+}
+.header__logo {
+}
+.header__burger {
+}
+.header__menu {
+}
+.header__list {
+}
+.header__link {
+}
+.content {
+}
+.content__text {
+
 }
